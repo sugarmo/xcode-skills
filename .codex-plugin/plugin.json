@@ -1,0 +1,35 @@
+{
+  "name": "xcode-skills",
+  "version": "0.1.0",
+  "description": "Codex skills for Xcode, SwiftUI, UIKit modernization, testing, and Apple platform security workflows.",
+  "author": {
+    "name": "Sugarmo"
+  },
+  "keywords": [
+    "xcode",
+    "swift",
+    "swiftui",
+    "uikit",
+    "testing",
+    "security"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Xcode Skills",
+    "shortDescription": "Apple platform skills for Xcode, SwiftUI, UIKit, tests, and security work.",
+    "longDescription": "A local Codex plugin that bundles focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, Swift Testing migration, simulator verification, and C bounds safety adoption.",
+    "developerName": "Sugarmo",
+    "category": "Development",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Audit my Xcode project security settings.",
+      "Review this SwiftUI code for modern best practices.",
+      "Modernize this UIKit app for scene-based lifecycle."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
