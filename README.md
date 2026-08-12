@@ -2,13 +2,13 @@
 
 Xcode Skills is a Codex plugin for Apple platform work. After installation,
 Codex can use the bundled skills when you ask for help with Xcode projects,
-SwiftUI, UIKit modernization, Swift Testing, simulator verification, security
-settings, or C bounds-safety adoption.
+SwiftUI, UIKit modernization, App Intents, document-based apps, Swift Testing,
+simulator verification, security settings, or C bounds-safety adoption.
 
 These skills were exported from Xcode with:
 
 ```bash
-xcrun agent skills export
+xcrun agent skills export --output-dir "$PWD/skills" --replace-existing
 ```
 
 ## What You Can Ask
@@ -21,6 +21,8 @@ matches one of these areas:
 - Review SwiftUI code for modern best practices, performance risks,
   localization, view structure, data flow, list identity, and deprecated APIs.
 - Update SwiftUI code for SDK 27 source changes and new APIs.
+- Build or migrate document-based SwiftUI apps with the SDK 27 document APIs.
+- Review App Intents for correctness and adopt new SDK 27 App Intents APIs.
 - Modernize UIKit apps for scene lifecycle, multi-window behavior, orientation,
   safe areas, and screen APIs.
 - Modernize XCTest suites or improve existing Swift Testing tests.
@@ -43,6 +45,14 @@ Modernize this UIKit app so it works correctly with multiple scenes.
 ```
 
 ```text
+Review these App Intents and update them for SDK 27.
+```
+
+```text
+Build a document-based SwiftUI app with autosave and undo support.
+```
+
+```text
 Migrate these XCTest tests to Swift Testing where appropriate.
 ```
 
@@ -56,8 +66,11 @@ Help adopt -fbounds-safety in this C module.
 
 ## Included Skills
 
+- `adopt-c-bounds-safety`
+- `app-intents-specialist`
+- `app-intents-whats-new-27`
 - `audit-xcode-security-settings`
-- `c-bounds-safety`
+- `building-document-based-swiftui-applications`
 - `device-interaction`
 - `modernize-tests`
 - `swiftui-specialist`

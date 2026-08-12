@@ -1,7 +1,7 @@
 {
   "name": "xcode-skills",
-  "version": "0.2.0",
-  "description": "Codex skills for Xcode, SwiftUI, UIKit modernization, testing, and Apple platform security workflows.",
+  "version": "0.3.0",
+  "description": "Codex skills for Xcode, SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
   "author": {
     "name": "Sugarmo"
   },
@@ -10,14 +10,16 @@
     "swift",
     "swiftui",
     "uikit",
+    "app-intents",
+    "documents",
     "testing",
     "security"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Xcode Skills",
-    "shortDescription": "Apple platform skills for Xcode, SwiftUI, UIKit, tests, and security work.",
-    "longDescription": "A local Codex plugin that bundles focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, Swift Testing migration, simulator verification, and C bounds safety adoption.",
+    "shortDescription": "Apple platform skills for Xcode, SwiftUI, UIKit, App Intents, documents, tests, and security.",
+    "longDescription": "A Codex plugin that bundles focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, App Intents, document-based apps, Swift Testing migration, simulator verification, and C bounds safety adoption.",
     "developerName": "Sugarmo",
     "category": "Development",
     "capabilities": [
@@ -28,7 +30,9 @@
     "defaultPrompt": [
       "Audit my Xcode project security settings.",
       "Review this SwiftUI code for modern best practices.",
-      "Modernize this UIKit app for scene-based lifecycle."
+      "Modernize this UIKit app for scene-based lifecycle.",
+      "Review these App Intents for correctness and modern APIs.",
+      "Build a document-based SwiftUI app."
     ],
     "brandColor": "#2563EB"
   }
