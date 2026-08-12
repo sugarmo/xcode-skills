@@ -1,6 +1,6 @@
 {
   "name": "xcode-skills",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Codex skills and native Xcode MCP tooling for SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
   "author": {
     "name": "Sugarmo"
@@ -30,6 +30,8 @@
       "Review"
     ],
     "websiteURL": "https://github.com/sugarmo/xcode-skills",
+    "composerIcon": "./assets/xcode-skills.png",
+    "logo": "./assets/xcode-skills.png",
     "defaultPrompt": [
       "Audit my Xcode project security settings.",
       "Review this SwiftUI code for modern best practices.",
