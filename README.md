@@ -13,6 +13,30 @@ These skills were exported from Xcode with:
 xcrun agent skills export --output-dir "$PWD/skills" --replace-existing
 ```
 
+## Built-in Xcode MCP
+
+The plugin includes an MCP server configuration for Xcode's native tools:
+
+```json
+{
+  "mcpServers": {
+    "xcode": {
+      "command": "xcrun",
+      "args": ["mcpbridge"]
+    }
+  }
+}
+```
+
+When the plugin is enabled, Codex launches Xcode's built-in STDIO bridge and
+connects to the Xcode instance selected by `xcode-select`. This gives Codex
+access to the tools exposed by Xcode while keeping the workflow integrated with
+the open project and Xcode session.
+
+The MCP integration requires an Xcode version that provides `mcpbridge`. It
+does not install or use `xcodebuildmcp`, Node.js, npm, or another third-party MCP
+server.
+
 ## What You Can Ask
 
 Use natural language. Codex will select the relevant skill when your request
