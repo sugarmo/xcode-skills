@@ -27,6 +27,7 @@
       "Write",
       "Review"
     ],
+    "websiteURL": "https://github.com/sugarmo/xcode-skills",
     "defaultPrompt": [
       "Audit my Xcode project security settings.",
       "Review this SwiftUI code for modern best practices.",
