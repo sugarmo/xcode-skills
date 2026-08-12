@@ -1,9 +1,11 @@
 # Xcode Skills
 
-Xcode Skills is a Codex plugin for Apple platform work. After installation,
-Codex can use the bundled skills when you ask for help with Xcode projects,
-SwiftUI, UIKit modernization, App Intents, document-based apps, Swift Testing,
-simulator verification, security settings, or C bounds-safety adoption.
+Xcode Skills is a Codex plugin for Apple platform work. It bundles Xcode's
+native MCP server alongside focused skills. After installation, Codex can use
+Xcode's tools and the bundled guidance when you ask for help with Xcode
+projects, SwiftUI, UIKit modernization, App Intents, document-based apps,
+Swift Testing, simulator verification, security settings, or C bounds-safety
+adoption.
 
 These skills were exported from Xcode with:
 
@@ -85,8 +87,9 @@ code. This is expected and helps keep guidance specific to the requested
 Apple-platform workflow.
 
 For simulator or device verification, Codex may need an available simulator,
-an existing app build target, or an already running session. For Xcode builds,
-prefer the configured Xcode build tooling in your Codex environment.
+an existing app build target, or an already running session. The bundled MCP
+configuration launches Xcode's own STDIO bridge with `xcrun mcpbridge` and
+connects to the Xcode instance selected by `xcode-select`.
 
 ## Plugin Details
 
@@ -96,11 +99,16 @@ The plugin manifest is:
 .codex-plugin/plugin.json
 ```
 
-It declares the plugin name as `xcode-skills` and exposes the bundled skills
-from:
+It declares the plugin name as `xcode-skills`, exposes the bundled skills from:
 
 ```text
 skills/
+```
+
+and loads Xcode's native MCP server from:
+
+```text
+.mcp.json
 ```
 
 To validate the local plugin source:

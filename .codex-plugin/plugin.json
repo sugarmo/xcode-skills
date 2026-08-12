@@ -1,7 +1,7 @@
 {
   "name": "xcode-skills",
-  "version": "0.3.0",
-  "description": "Codex skills for Xcode, SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
+  "version": "0.3.1",
+  "description": "Codex skills and native Xcode MCP tooling for SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
   "author": {
     "name": "Sugarmo"
   },
@@ -16,13 +16,15 @@
     "security"
   ],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Xcode Skills",
     "shortDescription": "Apple platform skills for Xcode, SwiftUI, UIKit, App Intents, documents, tests, and security.",
-    "longDescription": "A Codex plugin that bundles focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, App Intents, document-based apps, Swift Testing migration, simulator verification, and C bounds safety adoption.",
+    "longDescription": "A Codex plugin that bundles Xcode's native MCP tools with focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, App Intents, document-based apps, Swift Testing migration, simulator verification, and C bounds safety adoption.",
     "developerName": "Sugarmo",
     "category": "Development",
     "capabilities": [
+      "Interactive",
       "Read",
       "Write",
       "Review"
