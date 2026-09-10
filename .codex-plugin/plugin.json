@@ -1,6 +1,6 @@
 {
   "name": "xcode-skills",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Codex skills and native Xcode MCP tooling for SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
   "author": {
     "name": "Sugarmo"
