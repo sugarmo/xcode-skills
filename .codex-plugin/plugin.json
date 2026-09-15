@@ -1,7 +1,7 @@
 {
   "name": "xcode-skills",
-  "version": "0.3.5",
-  "description": "Codex skills and native Xcode MCP tooling for SwiftUI, UIKit, App Intents, document apps, testing, and Apple platform security workflows.",
+  "version": "0.3.6",
+  "description": "Xcode IDE integration with native MCP tools and Apple-provided skills for SwiftUI, UIKit, App Intents, accessibility, localization, testing, and security.",
   "author": {
     "name": "Sugarmo"
   },
@@ -13,14 +13,17 @@
     "app-intents",
     "documents",
     "testing",
-    "security"
+    "security",
+    "accessibility",
+    "localization",
+    "translation"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Xcode",
-    "shortDescription": "Apple platform skills for Xcode, SwiftUI, UIKit, App Intents, documents, tests, and security.",
-    "longDescription": "A Codex plugin that bundles Xcode's native MCP tools with focused skills for Apple platform development, including Xcode security audits, SwiftUI guidance, UIKit modernization, App Intents, document-based apps, Swift Testing migration, simulator verification, and C bounds safety adoption.",
+    "shortDescription": "Apple platform skills for development, accessibility audits, translation, testing, and security.",
+    "longDescription": "A Codex plugin that integrates with the Xcode IDE through its native MCP tools and Apple-provided skills. Covers SwiftUI, UIKit, App Intents, document-based apps, Swift Testing, device verification, C bounds safety, security audits, Dynamic Type, contrast, VoiceOver, and String Catalog translation with language-specific style guides.",
     "developerName": "Sugarmo",
     "category": "Development",
     "capabilities": [
@@ -37,7 +40,9 @@
       "Review this SwiftUI code for modern best practices.",
       "Modernize this UIKit app for scene-based lifecycle.",
       "Review these App Intents for correctness and modern APIs.",
-      "Build a document-based SwiftUI app."
+      "Build a document-based SwiftUI app.",
+      "Audit my views for Dynamic Type, contrast, and VoiceOver support.",
+      "Translate my Xcode String Catalogs into another language."
     ],
     "brandColor": "#2563EB"
   }
